@@ -75,12 +75,12 @@ def print_counter():
     for no in range(1, 46) :
         temp = temp + count[no]
     
-    print('all  = ' + str( temp )+ ' 1/n = ' + str(temp % 6) )
+    print('all  = ' + str( temp )  )
     tt =input("Enter any key...")
     pass
 
 def get_lotto_num(no):
-    print('get no!')
+    print('get numbers!')
     lotto_url = "https://dhlottery.co.kr/gameResult.do?method=byWin&drwNo=" + str(no)
     print(lotto_url)
     while 1:
@@ -147,7 +147,7 @@ def make_random():
         pass
     sel.sort()
     check_ranking(sel)
-    tt =input("Enter any key...")
+    tt = input("Enter any key...")
 
     pass
 
@@ -160,7 +160,7 @@ def check_numbers():
     num_list = list(map(str, input('input num list (6) : ').split()))
     num_list.sort()
     check_ranking(num_list)
-    tt =input("Enter any key...")
+    tt = input("Enter any key...")
     pass
 
 def check_ranking(list):
@@ -210,22 +210,13 @@ def show_menu():
         return False
     
 def main():
-    # 1. read json file
+    # 1. read json data
     init_data()
     checksum = True
-    list1 = [2, 16, 19, 31, 34, 37]
-    list2 = [2, 16, 19, 31, 34 , 35, 37]
-    compare_number(list1, list2)
     # 2. show menu
     while checksum :
         os.system('cls')
         checksum = show_menu()
-        
-    #   a. show number ranking
-    #   a. number update
-    #   a. get random number
-    #   a. check rank
-    
     pass
 
 if __name__ == "__main__":

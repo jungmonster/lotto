@@ -1,14 +1,25 @@
 # lotto
-lotto parsing
+lotto N times Numbers crawling source.
+
+## need module
+- requests
+- BeautifulSoup
+```
+pip install requests
+pip install bs4
+```
+
 
 ## files
-lotto.json : Saving numbers information of lotto N times 
+lotto.json : Saving numbers data.
+lotto.py : python code. 
+
 
 ## Menu
 ```
     ********  Info  ********
     Name : lotto
-    Last No : 861
+    Last No : 867
     
     ******** Lotto Number ********
     1. Number Ranking
