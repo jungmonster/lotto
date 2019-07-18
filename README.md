@@ -11,7 +11,7 @@ pip install bs4
 
 
 ## files
-lotto.json : Saving numbers data.
+lotto.json : Saving numbers data.  
 lotto.py : python code. 
 
 
